@@ -1,6 +1,8 @@
 # commit-checker
 
-This utility is primarily design to work with **JIRA** projects, nevertheless can be used in combination with **clickup** or other tools relying on ticket numbers (e.g. AB-100). The project code is customisable via
+![Commit screenshot](https://github.com/pixelygroup/screenshots/blob/main/commit-checker/commit.gif)
+
+This utility is primarily design to work with **JIRA** projects, nevertheless can be used in combination with **clickup** or other tools relying on ticket numbers (e.g. AB-100). The project prefix is customisable via command line tool. See the configuration section below.
 
 
 ## Installation
@@ -10,6 +12,8 @@ npm i -D @pixelygroup/eslint-config-px husky
 ```
 
 ## Configuration
+
+![Config screenshot](https://github.com/pixelygroup/screenshots/blob/main/commit-checker/commit.gif)
 
 1. To use the tool add the following to your package.json:
 
