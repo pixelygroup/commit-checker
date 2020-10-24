@@ -1,0 +1,56 @@
+{
+  "name": "@pixelygroup/commit-checker",
+  "version": "0.0.1",
+  "description": "Bumps version in package.json and package-lock.json files based on passed argument",
+  "repository": "github:pixelygroup/commit-checker.git",
+  "bugs": {
+    "url": "https://github.com/pixelygroup/commit-checker/issues"
+  },
+  "homepage": "https://github.com/pixelygroup/commit-checker#readme",
+  "main": "bin/index.js",
+  "bin": {
+    "px-commit": "./bin/index.js"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "version-bump": "version-x"
+  },
+  "keywords": [
+    "git",
+    "JIRA",
+    "commit validation",
+    "CI",
+    "CD",
+    "pixely group"
+  ],
+  "author": "Lubos Krystynek",
+  "license": "MIT",
+  "dependencies": {
+    "prompts": "^2.3.2",
+    "yargs": "^16.1.0"
+  },
+  "engines": {
+    "node": ">=8.3.0"
+  },
+  "devDependencies": {
+    "@pixelygroup/eslint-config-px": "^0.1.2",
+    "@pixelygroup/version-x": "^0.2.1",
+    "eslint": "^7.11.0",
+    "eslint-plugin-jsdoc": "^30.7.3",
+    "eslint-plugin-node": "^11.1.0",
+    "husky": "^3.0.8",
+    "lint-staged": "^9.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
