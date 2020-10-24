@@ -1,6 +1,6 @@
 {
   "name": "@pixelygroup/commit-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bumps version in package.json and package-lock.json files based on passed argument",
   "repository": "github:pixelygroup/commit-checker.git",
   "bugs": {
