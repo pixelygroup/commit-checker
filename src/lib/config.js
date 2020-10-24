@@ -28,7 +28,7 @@ async function createNew () {
   const answers = await collectAnswers(questions)
 
   const arr = [
-    `/^${answers.prefix}-\\d+\\s.*$/igm`,
+    `/^${answers.prefix}-\\d+\\s.*$/gm`,
     '/^Release \\d\\.\\d\\.\\d(-.+)?/',
   ]
 
