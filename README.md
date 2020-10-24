@@ -36,17 +36,6 @@ Alternatively, you can create the file manually and add your own patterns
 /^Release \d\.\d\.\d(-.+)?/
 ```
 
-
-TO DO:
-- init script
-- store in setting in rc
-- allow regex in rc file?
-
-- commit-config
-  - asks for project code (e.g. AB)
-  - creates .commitcheckrc.js
-  - adds regex to new lines
-
 ## More information
 For more information about husky visit:
 - [Husky](https://www.npmjs.com/package/husky)
