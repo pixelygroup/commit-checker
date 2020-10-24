@@ -6,12 +6,12 @@ const configFilePath = path.resolve(configFileName)
 const msgPath = process.env.HUSKY_GIT_PARAMS
 const msg = msgPath ? fs.readFileSync(msgPath, 'utf-8').trim() : null
 
-const validators = fs.readFileSync(configFilePath, 'utf-8').trim()
 
 /**
  * @returns {Array} of validators
  */
 function getValidators () {
+  const validators = fs.readFileSync(configFilePath, 'utf-8').trim()
   const validatorsArr = validators.split('\n')
   const reArr = validatorsArr.map(v => {
     const flags = v.replace(/.*\/([gimy]*)$/, '$1')
@@ -46,7 +46,7 @@ function killWithError () {
   console.log(msg)
   console.log('---------------------------------------')
   console.log('The message should match one of the \nfollowing patterns:')
-  console.log(validators)
+  console.log(getValidators())
   console.log('---------------------------------------')
   // eslint-disable-next-line no-process-exit
   process.exit(1)
