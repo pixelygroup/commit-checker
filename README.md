@@ -8,7 +8,7 @@ This utility is primarily design to work with **JIRA** projects, nevertheless ca
 ## Installation
 In your project directory, run following command to install `@pixelygroup/eslint-config-px` and `husky`
 ```shell
-npm i -D @pixelygroup/eslint-config-px husky
+npm i -D @pixelygroup/commit-checker husky
 
 ```
 
