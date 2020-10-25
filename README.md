@@ -9,7 +9,6 @@ This utility is primarily design to work with **JIRA** projects, nevertheless ca
 In your project directory, run following command to install `@pixelygroup/eslint-config-px` and `husky`
 ```shell
 npm i -D @pixelygroup/commit-checker husky
-
 ```
 
 ## Configuration
@@ -37,7 +36,7 @@ This will crate `.pxcommitcheckrc` file in the root folder of your project and g
 Alternatively, you can create the file manually and add your own patterns
 
 ```
-/^XX-\d+\s.*$/igm
+/^XX-\d+\s.*$/gm
 /^Release \d\.\d\.\d(-.+)?/
 ```
 
