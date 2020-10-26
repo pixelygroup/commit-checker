@@ -44,3 +44,5 @@ Alternatively, you can create the file manually and add your own patterns
 For more information about husky visit:
 - [Husky](https://www.npmjs.com/package/husky)
 
+## Do you enjoy this package? Help us keep it maintained?
+### [Buy us a coffee or become a sponsor](https://github.com/sponsors/pixelygroup)

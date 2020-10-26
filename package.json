@@ -1,6 +1,6 @@
 {
   "name": "@pixelygroup/commit-checker",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Bumps version in package.json and package-lock.json files based on passed argument",
   "repository": "github:pixelygroup/commit-checker.git",
   "bugs": {
@@ -15,9 +15,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "version-x": "version-x",
-    "version-major": "version-x -- -m",
-    "version-minor": "version-x -- -i",
-    "version-patch": "version-x -- -p"
+    "version-major": "version-x -m",
+    "version-minor": "version-x -i",
+    "version-patch": "version-x -p"
   },
   "keywords": [
     "git",
