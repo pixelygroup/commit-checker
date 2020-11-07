@@ -21,7 +21,9 @@ npm i -D @pixelygroup/commit-checker husky
 // package.json
 ...
 "husky": {
-  "commit-msg": "px-commit -- -E HUSKY_GIT_PARAMS"
+  "hooks": {
+    "commit-msg": "px-commit -- -E HUSKY_GIT_PARAMS"
+  }
 },
 ...
 ```
